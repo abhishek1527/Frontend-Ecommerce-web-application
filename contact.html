@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link src="style/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <style>
+        *{
+            margin: 0px;
+        }
+        .login{
+            padding:5%;
+            background-color: rgb(78, 130, 116);
+            color: white;
+        }
+        @media only screen and (min-width: 1400px) {
+            .login{
+                padding-left: 30%;
+                padding-right: 30%;
+            }
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    <body style="background-color: aquamarine;">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script>  
+        $(function(){ 
+          $("#header").load("header.html");  
+          $("#footer").load("footer.html");  
+        }); 
+        </script>
+
+        <div id="header"></div>
+
+
+        
+        <!-- meta tsg -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+        }
+        /* submit btn */
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+
+
+        /* Create two columns that float next to eachother */
+        .column{
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        .imgg{
+            background-image: url(https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            width:100px;
+            height:100px;
+        }
+        </style>
+
+<!-- grid container -->
+<div class="container" style="background-color: aliceblue;">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <!-- row -->
+  <div class="row">
+    <!-- coloum -->
+    <div class="column">
+      <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" style="width:100%">
+    </div>
+    <div class="column" style="font-family: cursive;">
+      <!-- form -->
+      <form action="/action_page.php">
+        <!-- fname -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <!-- lname -->
+        <label for="lname">Last Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <!-- email -->
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last email..">
+        <!-- country -->
+        <!-- <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> -->
+        <!-- message -->
+        <label for="subject">message</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+        <a href="#"><input type="submit" value="Submit"></a>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+        <!-- footer -->
+        <div id="footer"></div>
+    </body>
+</html>

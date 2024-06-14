@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+}
+/* Login button style */
+.login-btn{
+    border: groove 1px;
+    padding: 4px 17px;
+    color: black;
+    border-color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: transparent;
+   
+}
+/* adding hover to the login button on navbar */
+.login-btn :hover{
+    background-color: dodgerblue;
+}
+/* Nav items */
+.nav-items{
+    justify-content: center;
+}
+/* dropdown */
+.dropdown{
+    background-color: transparent;
+}
+/*style for links */
+.links{
+    border:groove 1px;
+    border-color: black;
+    color: black;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+
+/* Button links */
+.btn{
+    background-color: rgb(240, 236, 232);
+    border-color: aliceblue;
+    color: rgb(14, 13, 13);
+}
+/* navbar2 style */
+.nav2{
+    background-color: rgb(203, 201, 191);
+    padding: 10px;
+}
+
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* body */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+}
+/* container */
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+/* card */
+.card {
+  background: #fff;
+  border-radius: 8px;
+}
+/* card image */
+.card .image-box {
+  height: 200px;
+}
+/* card image box responsive */
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+/* cprofile details */
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+/* profile image */
+.card .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+/* profile name */
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+/* profile job */
+.profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}

@@ -1,0 +1,137 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+.main{
+color: #efdbdb;
+font-family: 'Quicksand', serif;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0;
+padding:rem;
+}
+
+.main{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.card_image img {
+justify-content: center;
+align-items: center;
+height: 200px;
+max-width: 70%;
+margin-left:30%;
+margin-top: 2px;
+margin-bottom: 2px;
+vertical-align: middle;
+}
+.cards {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.cards_item {
+width: 100%;
+display: flex;
+padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+.cards_item {
+    width: 50%;
+}
+}
+
+@media (min-width: 56rem) {
+.cards_item {
+    width: 33.3333%;
+}
+}
+
+.card {
+width:100% ;
+background-color: white;
+border-radius: 0.25rem;
+box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.card_content {
+padding: 1rem;
+height:35vh;
+background: linear-gradient(to bottom left, #eee2e3 40%, #b0866b 100%);
+}
+
+.card_title {
+color: #0d0d0d;
+font-size: 1.1rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.card_text {
+color: #100e0e;
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 400;
+height:45px;
+}
+.made_by{
+font-weight: 400;
+font-size: 13px;
+margin-top: 35px;
+text-align: center;
+}
+.price{
+background-color: rgb(174, 222, 72);
+border-top-right-radius: 50px;
+width: 100px;
+text-align: center;
+font-size: 20px;
+color: red;
+}
+.buy{
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: groove;
+    border-bottom-right-radius: 30px;
+    border-color:  rgb(191, 215, 237);
+    border-top-left-radius: 30px;
+    background-color: none;
+}
+.cart{
+    width: 100%;
+    font-size: 20px;
+    border: groove;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-color:  rgb(194, 215, 235);
+    background-color: none;
+}
+.cart:hover{
+    background-color: rgb(79, 148, 212) ;
+}
+.buy:hover{
+    background-color: rgb(79, 148, 212) ;
+}

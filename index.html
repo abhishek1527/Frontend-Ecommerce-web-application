@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- bootstrap link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- css style link -->
+        <link src="style/style.css">
+      <!-- meta taga -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <!-- style -->
+    <style>
+        /* background image */
+        .backgroundimg {
+           background-image: url(https://img.freepik.com/free-photo/portrait-cute-happy-girl-kissing-her-credit-card-after-buying-gifts-holding-shopping-bags-standin_1258-125577.jpg?w=1380&t=st=1692949776~exp=1692950376~hmac=a6da6291ded39142232732e07d8a6b5aab3b476ce37dc56d6489c6944282e2dc);
+           background-size:cover; 
+           height: 500px;
+        }
+        /* making responsive */
+        @media only screen and (min-width: 600px) {
+            .backgroundimg img{
+            width: 100%;
+            height:20px;
+        }
+        }
+        /* Container holding the image and the text */
+        .container1 {
+              position: relative;
+              text-align: center;
+              color: white;
+            }
+            .container1 img{
+             
+            }
+            /* Bottom left text */
+            .bottom-left {
+              position: absolute;
+              bottom: 8px;
+              left: 16px;
+            }
+            /* Top left text */
+            .top-left {
+              position: absolute;
+              top: 8px;
+              left: 16px;
+              color: ;
+            }
+            @media only screen and (min-width:900px){
+            .top-left{
+              font-size: 30px;
+            }
+            }
+            /* Centered text */
+            .centered {
+              position: absolute;
+              top: 50%;
+              left: 30%;
+              transform: translate(-50%, -50%);
+              font-size:55px;
+            }
+            @media only screen and (max-width: 800px) {
+              .centered{
+                font-size: 35px;
+              }
+            }
+            @media only screen and (max-width: 500px) {
+              .centered{
+                font-size:18px;
+              }
+            }
+            /* center text */
+            .centered{
+              text-transform: uppercase;
+              background-image: linear-gradient(
+                -225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%
+              );
+              background-size: auto auto;
+              background-clip: border-box;
+              background-size: 200% auto;
+              color: #fff;
+              background-clip: text;
+            
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              animation: textclip 2s linear infinite;
+            zaaaaqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+            /* key frames */
+            @keyframes textclip {
+              to {
+                background-position: 200% center;
+              }
+            }
+            /* title word */
+            .title-word {
+              
+              animation: color-animation 4s linear infinite;
+            }
+            /* title word1 */
+            .title-word-1 {
+              --color-1: #DF8453;
+              --color-2: #3D8DAE;
+              --color-3: #E4A9A8;
+            }
+            /* title word2 */
+            .title-word-2 {
+              --color-1: #DBAD4A;
+              --color-2: #ACCFCB;
+              --color-3: #17494D;
+            }
+            /* title word 3 */
+            .title-word-3 {
+              --color-1: #ACCFCB;
+              --color-2: #E4A9A8;
+              --color-3: #ACCFCB;
+            }
+            /* title word 4 */
+            .title-word-4 {
+              --color-1: #3D8DAE;
+              --color-2: #DF8453;
+              --color-3: #E4A9A8;
+            }
+
+            @keyframes color-animation {
+              0%    {color: var(--color-1)}
+              32%   {color: var(--color-1)}
+              33%   {color: var(--color-2)}
+              65%   {color: var(--color-2)}
+              66%   {color: var(--color-3)}
+              99%   {color: var(--color-3)}
+              100%  {color: var(--color-1)}
+            }
+
+            /* Here are just some visual styles. 🖌 */
+
+            .title {
+              font-family: "Montserrat", sans-serif;
+              font-weight: 800;
+              font-size: 2vw;
+              text-transform: uppercase;
+            }
+    </style>
+    <body>
+        <!-- js code for common header and footer -->
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script>  
+        $(function(){ 
+          $("#header").load("header.html");  
+          $("#slider").load("slider.html");
+          $("#footer").load("footer.html");
+        }); 
+        </script>
+        <!-- header -->
+        <div id="header"></div>       
+        <style>
+            
+        </style>
+        <!-- container -->
+        <div class="container1">
+          <!-- image -->
+            <img src="https://img.freepik.com/free-photo/portrait-cute-happy-girl-kissing-her-credit-card-after-buying-gifts-holding-shopping-bags-standin_1258-125577.jpg?w=1380&t=st=1692949776~exp=1692950376~hmac=a6da6291ded39142232732e07d8a6b5aab3b476ce37dc56d6489c6944282e2dc" alt="Snow" style="width:100%;">
+            <div class="bottom-left"></div>
+            <div class="top-left">
+              <div class="container">
+                <!-- adding text to the top left -->
+                <h2 class="title">
+                  <span class="title-word title-word-4">“Fashion & Clothing is the one makes you</span><br>
+                  <span class="title-word title-word-2">look awesome and</span><br>
+                  <span class="title-word title-word-3">unique from others!”</span>
+                  <span class="title-word title-word-1">.</span>
+                </h2>
+              </div>
+             </div>
+             <!-- adding text in the center -->
+            <div class="centered">A-Shopping.</div>
+          </div>
+        <!-- slider -->
+        <div id="slider"></div>
+        <!-- footer -->
+        <div id="footer"></div>
+    </body>
+</html>
